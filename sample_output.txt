@@ -1,0 +1,22 @@
+=== Round 1: withdraw 450 ===
+-- S001 (SavingsAccount) start balance: 500.0
+Withdrawal rejected: minimum balance of 100.0 required.
+Balance after withdraw: 500.0
+Interest applied: 25.0
+Balance after end of month: 525.0
+-- C001 (CurrentAccount) start balance: 300.0
+Account is in overdraft (within limit).
+Balance after withdraw: -150.0
+Maintenance fee deducted: 10.0
+Balance after end of month: -160.0
+
+=== Round 2: withdraw 400 ===
+-- S001 start balance: 525.0
+Balance after withdraw: 125.0
+Interest applied: 6.25
+Balance after end of month: 131.25
+-- C001 start balance: -160.0
+Withdrawal rejected: overdraft limit of 500.0 exceeded.
+Balance after withdraw: -160.0
+Maintenance fee deducted: 10.0
+Balance after end of month: -170.0
